@@ -1,6 +1,6 @@
-import yaml
 import flask
 import urllib3 as urllib
+import yaml
 
 app = flask.Flask(__name__)
 
@@ -15,7 +15,7 @@ def index():
 CONFIG = {"API_KEY": "771df488714111d39138eb60df756e6b"}
 
 
-class Person(object):
+class Person:
     def __init__(self, name):
         self.name = name
 
